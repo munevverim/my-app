@@ -1,0 +1,112 @@
+@keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .second-image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: linear-gradient(
+      -45deg,
+      rgb(94, 94, 94) 0%,
+      rgb(35, 40, 88) 13%,
+      rgb(26, 26, 29) 26%, 
+      rgb(10, 61, 44) 38%,
+      rgb(59, 1, 83) 50%,
+      rgb(0, 0, 0) 62%,
+      rgb(105, 105, 105) 87%,
+      rgb(105, 105, 105) 100%
+    );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 10s infinite;
+    border-radius: 20px;
+    transition: background-color 1s ease-in-out;
+  }
+  
+  .tools-section {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .tools-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .tool {
+    margin-bottom: 20px;
+  }
+  
+  .tool h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .tool p {
+    font-size: 14px;
+  }
+  
+  .main-gallery-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .categories button {
+    background-color: #2b5876;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .categories button.active,
+  .categories button:hover {
+    background-color: #4e4376;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  

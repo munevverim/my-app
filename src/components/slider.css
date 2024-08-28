@@ -1,0 +1,66 @@
+
+@keyframes zoom-in {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .slider-container {
+    width: 100vw;
+    height: 35vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(92deg, #050505, #181318, #1a0e19, #150918, #020002);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slider-item {
+    flex: 0 0 auto;
+    margin: 0 3px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slider-item img {
+    width: 150px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Hover effect */
+  .slider-item:hover img {
+    animation: zoom-in 0.3s forwards;
+    filter: brightness(1.2);
+    z-index: 2;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Hide the alt text tooltip */
+  .slider-item img {
+    pointer-events: none;
+  }

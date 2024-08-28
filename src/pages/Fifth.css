@@ -1,0 +1,26 @@
+@keyframes backgroundFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .fifth-container {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundFade 5s ease-in-out;
+    transition: background-image 3s ease-in-out;
+  }
+  
+  .fifth-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,54 @@
+.about-page {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .about-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Arka plan opaklığı */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .about-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about-section ul {
+    font-size: 18px;
+    line-height: 1.6;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .about-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-section ul li strong {
+    color: #ffffff;
+  }
+  
+  /* Footer stilleri */
+  footer {
+    margin-top: 20px;
+  }
+  
